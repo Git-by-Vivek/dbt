@@ -1,0 +1,20 @@
+version: 2
+
+models:
+    - name: title_view
+      description: "user's viewing history based on title and date"
+      columns:
+          - name: title
+            description: "Show title"
+            tests:
+                - not_null
+
+          - name: view_count
+            description: "View Count"
+            tests:
+                - not_null 
+
+          - name: averagerating
+            description: "Show Rating"
+            tests:
+                - not_null

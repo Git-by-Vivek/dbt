@@ -1,0 +1,66 @@
+version: 2
+
+models:
+    - name: titledate_view
+      description: "user's viewing history for title and date"
+      columns:
+          - name: title
+            description: "Show title"
+            tests:
+                - not_null
+
+          - name: date
+            description: "Watched date"
+            tests:
+                - not_null 
+
+    - name: nametitle
+      description: "name and title of the show"
+      columns:
+          - name: tconst
+            description: "titleid"
+            tests:
+                - not_null
+
+          - name: nconst
+            description: "Title nameid"
+            tests:
+                - not_null
+
+    - name: title
+      description: "Show title details"
+      columns:
+          - name: tconst
+            description: "titleid"
+            tests:
+                - not_null
+
+    - name: titledata
+      description: "Show title details"
+      columns:
+          - name: nconst
+            description: "nameid"
+            tests:
+                - not_null
+
+    - name: crewdata
+      description: "Details about directors and writers"
+      columns:
+          - name: tconst
+            description: "titleid"
+            tests:
+                - not_null
+
+    - name: actor_view
+      description: "Details about directors and writers"
+      columns:
+
+          - name: title
+            description: "Title primary name"
+            tests:
+                - not_null
+
+          - name: date
+            description: "Watched date"
+            tests:
+                - not_null
