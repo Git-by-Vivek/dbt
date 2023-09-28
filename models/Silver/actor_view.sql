@@ -5,6 +5,7 @@ viewdata.title,
 titles.characters ,
 titleakas.region ,
 titleakas.language ,
+title.startyear startyear, 
 title.genres
 from 
 {{ ref('viewdata') }} viewdata
