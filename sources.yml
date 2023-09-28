@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: view_details
+    database: disco-history-399505  
+    schema: view_details  
+    tables:
+      - name: view_data
+      - name: ratings
+      - name: title_principals
+      - name: titles
+      - name: dir_writers
+      - name: title_basics
+      - name: title_akas
+      - name: 'names data'

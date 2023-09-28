@@ -1,0 +1,84 @@
+version: 2
+
+models:
+    - name: viewdata
+      description: "user's viewing history"
+      columns:
+
+          - name: title
+            description: "Show title"
+            tests:
+                - not_null
+
+          - name: date
+            description: "Date watched"
+            tests:
+                - not_null
+
+    - name: titleratings
+      description: "Title ratings"
+      columns:
+          - name: tconst
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: titleprincipals
+      description: "Title principals"
+      columns:
+          - name: tconst
+            description: "The primary key for this table"
+            tests:
+                #- unique
+                - not_null
+
+    - name: titleepisodes
+      description: "Title episodes"
+      columns:
+          - name: tconst
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: titlecrew
+      description: "Title crew"
+      columns:
+          - name: tconst
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: titlebasics
+      description: "Title basics"
+      columns:
+          - name: tconst
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: titleakas
+      description: "Title akas"
+      columns:
+          - name: titleid
+            description: "The primary key for this table"
+            tests:
+                #- unique
+                - not_null             
+
+    - name: namebasics
+      description: "Names of the titles"
+      columns:
+          - name: nconst
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+          - name: primaryname
+            description: "name of the title"
+            tests:
+                - not_null
